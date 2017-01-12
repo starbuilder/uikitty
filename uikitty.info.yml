@@ -1,6 +1,6 @@
-name: uikitty
+name: UIkitty
 type: theme
-description: A building block theme using uikit awesomeness.
+description: A building block theme merging UIkit 2 with Drupal 8
 core: 8.x
 base theme: classy
 libraries:

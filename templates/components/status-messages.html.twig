@@ -1,16 +1,16 @@
 <h2 class="uk-hidden">{{ status_headings[type] }}</h2>
-{% endif %} {% if messages|length > 1 %}
+{% endif %}
+{% if messages | length > 1 %}
 <ul class="messages__list">
-    {% for message in messages %}
+  {% for message in messages %}
     <button class="uk-button uk-notify-alert uk-hidden" data-message='{{ message }}' data-pos="bottom-right">alert</button>
-    {% endfor %}
+  {% endfor %}
 </ul>
 {% else %}
 <button class="uk-button uk-notify-alert uk-hidden" data-message='{{ messages|first }}' data-pos="bottom-right">alert</button>
-{% endif %} 
-{% if type == 'error' %} 
-{% endif %} 
-{# Remove type specific classes. #} 
-{% set attributes = attributes.removeClass(classes) %} 
-{% endfor %} 
+{% endif %}
+{% if type == 'error' %}{% endif %}
+{# Remove type specific classes. #}
+{% set attributes = attributes.removeClass(classes) %}
+{% endfor %}
 {% endblock messages %}
