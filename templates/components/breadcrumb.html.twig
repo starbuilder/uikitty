@@ -1,17 +1,19 @@
 {#
 /**
  * @file
- * Uikitty 2.x Theme override for a breadcrumb trail.
+ * Theme override for a breadcrumb trail.
  *
  * Available variables:
  * - breadcrumb: Breadcrumb trail items.
  */
 #}
-<nav role="navigation" aria-labelledby="system-breadcrumb">
-  <h2 class="uk-hidden">{{ 'Breadcrumb'|t }}</h2>
-  <ul class="uk-breadcrumb">
+
+{% if breadcrumb %}
+  <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 class="uk-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ul class="uk-breadcrumb">
     {% for item in breadcrumb %}
-      <li{{ attributes.addClass(is_active ? 'uk-active') }}>
+     <li{{ attributes.addClass(is_active ? 'uk-active') }}>
         {% if item.url %}
           <a href="{{ item.url }}">{{ item.text }}</a>
         {% else %}
@@ -19,6 +21,6 @@
         {% endif %}
       </li>
     {% endfor %}
-  </ul>
-</nav>
+    </ul>
+  </nav>
 {% endif %}

@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * UIkitty 2.x theme implementation for comments.
+ * Bartik's theme implementation for comments.
  *
  * Available variables:
  * - author: Comment author. Can be a link or plain text.
@@ -74,7 +74,7 @@
     'clearfix',
   ]
 %}
-<article role="article" {{ attributes.addClass(classes)|without('role') }}>
+<article role="article"{{ attributes.addClass(classes)|without('role') }}>
   {#
     Hide the "new" indicator by default, let a piece of JavaScript ask the
     server which comments are new for the user. Rendering the final "new"

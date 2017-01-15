@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * UIkitty 2.x Theme override for an item list.
+ * Theme override for an item list.
  *
  * Available variables:
  * - items: A list of items. Each item contains:
@@ -26,6 +26,7 @@
   {%- if title is not empty -%}
     <h3>{{ title }}</h3>
   {%- endif -%}
+
   {%- if items -%}
     <{{ list_type }}{{ attributes.addClass('uk-nav uk-nav-side') }}>
       {%- for item in items -%}
