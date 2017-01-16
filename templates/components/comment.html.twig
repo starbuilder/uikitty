@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Bartik's theme implementation for comments.
+ * Uikitty's theme implementation for comments.
  *
  * Available variables:
  * - author: Comment author. Can be a link or plain text.
@@ -81,7 +81,6 @@
     indicator here would break the render cache.
   #}
   <span class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></span>
-
   <footer class="comment__meta">
     {{ user_picture }}
     <p class="comment__author">{{ author }}</p>
@@ -96,7 +95,6 @@
       <p class="visually-hidden">{{ parent }}</p>
     {% endif %}
   </footer>
-
   <div{{ content_attributes.addClass('comment__content') }}>
     {% if title %}
       {{ title_prefix }}

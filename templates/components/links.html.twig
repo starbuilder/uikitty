@@ -42,7 +42,6 @@
   <ul{{ attributes.addClass('uk-subnav uk-subnav-pill') }}>
     {%- for item in links -%}
       <li{{ item.attributes.addClass('itemlink') }}>
-      
         {%- if item.link -%}
          {{ item.link }}
         {%- elseif item.text_attributes -%}

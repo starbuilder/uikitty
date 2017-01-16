@@ -30,8 +30,7 @@
  */
 #}
 {% if items %}
-
-    <h4 id="pagination-heading" class="uk-hidden">{{ 'Pagination'|t }}</h4>
+<h4 id="pagination-heading" class="uk-hidden">{{ 'Pagination'|t }}</h4>
     <ul class="uk-pagination">
       {# Print first item if we are not on the first page. #}
       {% if items.first %}
@@ -67,7 +66,7 @@
           <a href="{{ item.href }}" title="{{ title }}"{{ item.attributes|without('href', 'title') }}>
                {% else %}
               <span>
-          {% endif %}    
+          {% endif %}
             <span class="visually-hidden">
               {{ current == key ? 'Current page'|t : 'Page'|t }}
             </span>
@@ -76,7 +75,7 @@
               </span>
               {% else %}
           </a>
-             {% endif %} 
+             {% endif %}
         </li>
       {% endfor %}
       {# Add an ellipsis if there are further next pages. #}
@@ -102,5 +101,4 @@
         </li>
       {% endif %}
     </ul>
-
 {% endif %}
