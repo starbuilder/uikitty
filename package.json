@@ -1,0 +1,12 @@
+{
+  "name": "uikitty",
+  "version": "1.0.0",
+  "description": "UIkitty 2.x version only. Uses UIkit version 2.27.2",
+  "main": "index.js",
+  "repository": "git@github.com:qodeone/uikitty.git",
+  "author": "Isaac Horton <isaac@qode.one>",
+  "license": "MIT",
+  "dependencies": {
+    "uikit": "2.27.2"
+  }
+}

@@ -22,4 +22,4 @@ regions:
   offcanvas: 'Off-canvas'
 
 ckeditor_stylesheets:
-  - uikit/css/uikit.almost-flat.min.css
+  - node_modules/uikit/dist/css/uikit.almost-flat.min.css
